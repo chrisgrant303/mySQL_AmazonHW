@@ -1,7 +1,7 @@
 drop database if exists bamazon;
 create database bamazon;
 
-use table bamazon;
+use bamazon;
 
 create table products (
     item_id int (30) auto_increment not null,
@@ -9,7 +9,7 @@ create table products (
     department_name varchar (255) null,
     price decimal (10,2) not null,
     stock_quantity int (255) null,
-    primary key (item_id);
+    primary key (item_id)
 );
 
 insert into products (product_name, department_name, price, stock_quantity)
